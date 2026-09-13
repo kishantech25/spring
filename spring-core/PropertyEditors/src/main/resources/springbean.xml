@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!-- Student Bean -->
+   <!--<bean id="student" class="PropertyEditors.Student">
+       <property name="id" value="1"/>
+       <property name="name" value="Kishan"/>
+       <property name="dob" value="10/11/2026"/>
+       <property name="marks" value="30,40,50,60,70"/>
+       <property name="image" value="d:/work/image1.jpg"/>
+   </bean>
+   -->
+    <bean id="scientificCalculater" class="PropertyEditors.ScientificCalculator">
+        <property name="complexNumber" value="10,78"/>
+    </bean>
+</beans>

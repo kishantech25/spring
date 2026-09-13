@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="chip1"
+          class="com.primitive.Chip">
+
+        <property name="id" value="101"/>
+
+        <property name="type" value="Kishan Kumar"/>
+
+    </bean>
+
+    <bean id="chip2"
+          class="com.primitive.Chip">
+
+        <property name="id" value="102"/>
+
+        <property name="type" value="srinivas Kumar"/>
+
+    </bean>
+
+    <bean id="chip3"
+          class="com.primitive.Chip">
+
+        <property name="id" value="104"/>
+
+        <property name="type" value="Rahul Kumar"/>
+
+    </bean>
+
+    <bean id="chip5"
+          class="com.primitive.Chip">
+
+        <property name="id" value="106"/>
+
+        <property name="type" value="Puspa Devi"/>
+
+    </bean>
+    <bean id="chip6"
+          class="com.primitive.Chip">
+
+        <property name="id" value="107"/>
+
+        <property name="type" value="Pallavi Kumari"/>
+
+    </bean>
+    <bean id="chip7"
+          class="com.primitive.Chip">
+
+        <property name="id" value="108"/>
+
+        <property name="type" value="Rakesh Kumar"/>
+
+    </bean>
+    <bean id="chip8"
+          class="com.primitive.Chip">
+
+        <property name="id" value="109"/>
+
+        <property name="type" value="Ramya Chattur"/>
+
+    </bean>
+
+
+
+</beans>

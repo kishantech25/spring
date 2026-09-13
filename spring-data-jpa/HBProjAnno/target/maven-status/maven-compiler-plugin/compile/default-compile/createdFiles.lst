@@ -1,0 +1,3 @@
+com\annotation\util\HibernateUtil.class
+com\annotation\test\TestClient.class
+com\annotation\domain\Employee.class

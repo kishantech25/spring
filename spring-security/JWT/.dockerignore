@@ -1,0 +1,30 @@
+# Git
+.git
+.gitignore
+
+# IDE
+.idea
+.vscode
+*.iml
+*.iws
+*.ipr
+
+# Build
+target
+*.jar
+*.war
+*.ear
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Maven
+.mvn
+mvnw
+mvnw.cmd
+
+# Documentation
+*.md
+CHANGES_SUMMARY.md
+JWT_EXCEPTION_HANDLING.md

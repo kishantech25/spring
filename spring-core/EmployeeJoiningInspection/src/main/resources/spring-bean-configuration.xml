@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+        <bean id="doc"
+              class="com.nt.bpp.DocumentVerifiactionBPP"/>
+
+        <bean id="bg"
+              class="com.nt.bpp.BackgroundVerificationBPP"/>
+
+        <bean id="medical"
+              class="com.nt.bpp.MedicalVerificationBPP"/>
+
+        <bean id="hr"
+              class="com.nt.bpp.HRApprovalBPP"/>
+
+        <bean id="emp"
+              class="com.nt.beans.Employee">
+
+            <property name="id" value="101"/>
+            <property name="name" value="Kishan"/>
+
+            <property name="documentsVerified" value="true"/>
+            <property name="backgroundVerified" value="true"/>
+            <property name="medicalCleared" value="true"/>
+
+        </bean>
+
+</beans>

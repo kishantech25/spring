@@ -1,0 +1,10 @@
+com\i18n\multithread\Test.class
+com\i18n\filter\B.class
+com\i18n\I18NConfig.class
+com\i18n\multithread\MyThread.class
+com\i18n\App.class
+com\i18n\filter\A.class
+com\i18n\BoilerPlateLogic.class
+com\i18n\filter\Test.class
+com\i18n\filter\MethodCOnfig.class
+com\i18n\multithread\CalculateTable.class

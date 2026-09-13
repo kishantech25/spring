@@ -1,0 +1,7 @@
+com\springjpa\dao\BusDao.class
+com\springjpa\service\BusService.class
+com\springjpa\test\SpringJpaTest.class
+com\springjpa\entities\Bus$BusBuilder.class
+com\springjpa\config\PersistenceConfig.class
+com\springjpa\config\RootConfig.class
+com\springjpa\entities\Bus.class

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- BeanFactoryPostProcessor -->
+    <bean id="bfpp" class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
+
+        <property name="location" value="classpath:db.properties"/>
+
+    </bean>
+
+    <!-- DataSource Bean -->
+    <bean id="connectionManager"
+          class="com.factory.prossesor.conn.ConnectionManager">
+
+        <property name="driverClassName" value="${db.driver}"/>
+        <property name="url" value="${db.url}"/>
+        <property name="username" value="${db.username}"/>
+        <property name="password" value="${db.password}"/>
+    </bean>
+
+</beans>
