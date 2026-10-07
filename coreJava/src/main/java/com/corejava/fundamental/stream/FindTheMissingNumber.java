@@ -1,6 +1,11 @@
 package com.corejava.fundamental.stream;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class FindTheMissingNumber {
+
+      Map<Integer> map = new HashMap();
 
     public int findMissingNumber(int [] arr){
         //{3,0,1}

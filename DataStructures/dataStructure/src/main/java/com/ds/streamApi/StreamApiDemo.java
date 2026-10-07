@@ -1,7 +1,13 @@
 package com.ds.streamApi;
 
+import com.ds.productRepository.ProductRespository;
+import com.ds.record.Product;
+
+import javax.swing.text.html.Option;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class StreamApiDemo {
@@ -11,6 +17,8 @@ public class StreamApiDemo {
         List<Integer> numbers = Arrays.asList(10,20,15,30,5);
 
         System.out.println(getDistinct());
+        System.out.println(sortedTest());
+        compareingProductRate();
 
 
         // Traditional Approach
@@ -49,10 +57,19 @@ public class StreamApiDemo {
         //Remove the duplicates
         return numbers.stream().distinct().collect(Collectors.toList());
     }
-    public static void sortedTest(){
+    public static List<Integer> sortedTest(){
         List<Integer> numbers = Arrays.asList(1,1,1,2,2,3,3,3,5,6,7,8);
-
-        numbers.stream().sorted()
-                .collect(Collectors.toList())
+        return numbers.stream().sorted()
+                .collect(Collectors.toList());
     }
+    public static void compareingProductRate(){
+        List<Product> products =new ProductRespository().getProductRepository();
+
+//       List<Integer> pricess= products.stream().sorted(Comparator.comparing(Product::price))
+//                                           .collect(Collectors.toList());
+
+       //pricess.forEach(System.out::println);
+
+    }
+
 }
